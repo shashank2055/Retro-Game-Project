@@ -15,7 +15,6 @@ public class Projectile : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
     private void Update()
     {
         if (hit) return;
@@ -31,8 +30,10 @@ public class Projectile : MonoBehaviour
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
-    }
 
+        if (collision.tag == "Enemy")
+            collision.GetComponent<Health>()?.TakeDamage(1);
+    }
     public void SetDirection(float _direction)
     {
         lifetime = 0;
