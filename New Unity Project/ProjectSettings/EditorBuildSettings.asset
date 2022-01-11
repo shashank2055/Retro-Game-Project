@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Congrats.unity
     guid: 135defe96adb5b245acec48207313fc1
-  - enabled: 1
-    path: Assets/Levels/GameOver.unity
-    guid: 7c5c0212cdf22dd4bad85565adc5012f
   m_configObjects: {}

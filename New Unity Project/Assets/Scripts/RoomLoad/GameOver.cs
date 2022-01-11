@@ -5,12 +5,15 @@ public class GameOver : MonoBehaviour
 {
     public void MainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
-
-    public void Over()
+    public void PlayEnd()
     {
-        Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
+    public void PlayOver()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
     }
 }
 
